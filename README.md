@@ -1,4 +1,4 @@
-🎧 Spotify Data Pipeline using Python, AWS, and Snowflake
+🎧 # **Spotify Data Pipeline using Python, AWS, and Snowflake**
 🛠️ Technology Stack
 Python
 
@@ -40,6 +40,10 @@ Automated loading into defined Snowflake tables for downstream analytics
 
 📈 Outcome
 This pipeline enables efficient, automated data ingestion from Spotify into Snowflake, setting a strong foundation for building data visualizations, dashboards, or analytics models based on streaming or music metadata.
+
+#Architect Diagram
+
+spotify pipeline.webp
 
 
 
