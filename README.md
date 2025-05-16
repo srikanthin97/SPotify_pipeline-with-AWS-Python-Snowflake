@@ -1,4 +1,4 @@
-**#Spotify Data Pipeline using Python, AWS, and Snowflake
+Spotify-Data-Pipeline-using-Python-AWS-and-Snowflake
 
 Technology Stack:
 
