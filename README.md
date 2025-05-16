@@ -42,7 +42,7 @@ Seamless integration from AWS S3 to Snowflake tables for querying and analysis
 This pipeline offers a robust and automated solution to ingest and process Spotify data into Snowflake. It provides a solid foundation for building advanced analytics, dashboards, and reporting based on streaming or music-related insights.
 
 🧩 Architecture Diagram
-![Spotify Data Pipeline Architecture](spotify-pipeline.png)
+![Spotify Data Pipeline Architecture](Spotify.png)
 
 
 
