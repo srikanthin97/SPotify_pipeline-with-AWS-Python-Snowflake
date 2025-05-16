@@ -1,30 +1,45 @@
-Spotify-Data-Pipeline-using-Python-AWS-and-Snowflake
-
-Technology Stack:
-
+🎧 Spotify Data Pipeline using Python, AWS, and Snowflake
+🛠️ Technology Stack
 Python
 
-AWS Cloud (S3, CloudWatch, AWS Lambda)
+AWS Cloud Services
 
-Snowflake
+S3 (Simple Storage Service)
 
-Overview:
+AWS Lambda
 
-This data pipeline project leverages Python to extract music data from the Spotify API. The retrieved data, initially in dictionary format, is cleaned and transformed using Python-based logic before being stored and further processed.
+Amazon CloudWatch
 
-AWS Cloud Components:
+Snowflake (Data Warehouse)
 
-Amazon S3: Acts as the central storage layer. Raw data pulled from the Spotify API is first stored in an S3 bucket using an AWS Lambda function. After transformation, the cleaned data is also saved in a separate S3 location.
+📌 Project Overview
+This end-to-end data pipeline project extracts music-related data from the Spotify API using Python, performs data transformation, and loads the cleaned data into Snowflake for analytics and reporting. The architecture is designed to be serverless, event-driven, and scalable using AWS services.
 
-AWS CloudWatch: Serves as a scheduler to automatically trigger the Lambda functions based on predefined intervals.
+☁️ AWS Components
+🔹 Amazon S3
+Raw Storage: Stores the unprocessed data extracted from the Spotify API.
 
-AWS Lambda: Two Lambda functions are used:
+Transformed Storage: Holds the cleaned and processed data after transformation.
 
-One function extracts data from the Spotify API and saves it to the raw data bucket in S3.
+🔹 AWS Lambda
+Data Extraction Function: Connects to the Spotify API, fetches raw music data, and uploads it to an S3 bucket.
 
-The other performs data transformation and stores the output in a transformed data bucket in S3.
+Data Transformation Function: Reads raw data from S3, applies necessary transformations using Python, and saves the output back to another S3 location.
 
-Snowflake Integration:
+🔹 Amazon CloudWatch
+Used to schedule and trigger Lambda functions at regular intervals for automated data extraction and processing.
 
-Transformed data stored in S3 is loaded into Snowflake using Snowpipe, which facilitates automated, continuous data ingestion from the S3 bucket to designated Snowflake tables.
+❄️ Snowflake Integration
+The transformed data stored in S3 is ingested into Snowflake using Snowpipe, enabling:
+
+Real-time or near-real-time data ingestion
+
+Seamless integration between S3 and Snowflake
+
+Automated loading into defined Snowflake tables for downstream analytics
+
+📈 Outcome
+This pipeline enables efficient, automated data ingestion from Spotify into Snowflake, setting a strong foundation for building data visualizations, dashboards, or analytics models based on streaming or music metadata.
+
+
 
